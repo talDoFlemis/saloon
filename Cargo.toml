@@ -1,0 +1,11 @@
+[package]
+name = "saloon"
+version = "0.1.0"
+edition = "2021"
+authors = ["Said Rodrigues <coderflemis@gmail.com"]
+description = "A Rust implementation of an Edge Distributed Database"
+repository = "https://github.com/taldoflemis/saloon"
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
