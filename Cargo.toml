@@ -9,3 +9,4 @@ readme = "README.md"
 license = "MIT"
 
 [dependencies]
+sqlite = "0.36.0"
