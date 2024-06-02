@@ -1,3 +1,10 @@
+mod election;
+mod config;
+mod state;
+mod request_votes;
+mod append_entries;
+mod node;
+
 mod proto {
-    include!(concat!(env!("OUT_DIR"), "/saloon.raft.rs"));
+    tonic::include_proto!("raft");
 }
