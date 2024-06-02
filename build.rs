@@ -2,7 +2,9 @@ use std::io::Result;
 
 fn main() -> Result<()> {
     let protos = ["protocol/raft.proto"];
-    let includes = ["src/", "protocol/"];
-    prost_build::compile_protos(&protos, &includes)?;
+    let includes = ["protocol", "src/"];
+    tonic_build::configure()
+        .build_server(true)
+        .compile(&protos, &includes)?;
     Ok(())
 }
