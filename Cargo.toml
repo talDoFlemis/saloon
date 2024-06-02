@@ -10,6 +10,7 @@ license = "MIT"
 
 [dependencies]
 anyhow = "1.0.86"
+async-trait = "0.1.80"
 bytes = "1.6.0"
 prost = "0.12.6"
 prost-types = "0.12.6"
