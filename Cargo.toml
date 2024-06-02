@@ -17,6 +17,7 @@ prost-types = "0.12.6"
 sqlite = "0.36.0"
 thiserror = "1.0.61"
 uuid = { version = "1.8.0", features = ["v4"] }
+tonic = { version = "0.11.0" }
 
 [build-dependencies]
-prost-build = "0.12.6"
+tonic-build = "0.11.0"
