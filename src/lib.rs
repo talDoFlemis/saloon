@@ -1,5 +1,6 @@
 mod db;
 mod raft;
+mod log;
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right
