@@ -1,7 +1,5 @@
-use std::{
-    net::IpAddr,
-    sync::{Arc, Mutex},
-};
+use std::{net::IpAddr, sync::Arc};
+use tokio::sync::Mutex;
 
 use super::state::NodeState;
 use anyhow::Result;
@@ -13,7 +11,7 @@ pub struct Node {
 }
 
 impl Node {
-    pub fn persist_on_stable_storage(&self) -> Result<()> {
+    pub async fn persist_on_stable_storage(&self) -> Result<()> {
         Ok(())
     }
 }
