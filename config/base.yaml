@@ -1,0 +1,7 @@
+# Default Environment Variables
+env: "local"
+
+# Memtable Settings
+mem_table:
+  type: vector_mem_table
+  write_buffer_size_in_mb: 64
