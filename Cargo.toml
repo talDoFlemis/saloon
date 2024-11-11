@@ -10,7 +10,7 @@ license = "MIT"
 
 [dependencies]
 anyhow = "1.0.86"
-bytes = "1.6.0"
+bytes = { version = "1.6.0", features = ["serde"] }
 prost = "0.12.6"
 prost-types = "0.12.6"
 sqlite = "0.36.0"
