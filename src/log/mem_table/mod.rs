@@ -8,7 +8,6 @@ pub mod vector_memtable;
 pub struct MemTableEntry {
     pub key: Bytes,
     pub value: Bytes,
-    pub deleted: bool,
 }
 
 /// MemTableStore is a trait that defines the interface for the data structure that stores
@@ -16,7 +15,7 @@ pub struct MemTableEntry {
 pub trait MemTableStore {
     fn put(&mut self, key: &[u8], value: &[u8]);
     fn delete(&mut self, key: &[u8]);
-    fn get(&self, key: &[u8]) -> Option<&MemTableEntry>;
+    fn get(&self, key: &[u8]) -> Option<Bytes>;
     fn approximate_size(&self) -> u128;
 }
 
